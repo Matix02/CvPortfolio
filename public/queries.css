@@ -1,0 +1,121 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1280px){
+    .main-describe-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { padding: 0 2%; }
+}
+/* Small tablet to big tablet: from 768 to 1024px*/
+@media only screen and (max-width: 1023px){
+    body { font-size: 15px; }
+    section { padding: 60px 0; }
+    hr { width: 600px; }
+    .contat-form { width: 80%; }
+
+    .tab button{
+        width: 100%;
+        margin: 0;
+        font-size: 13px;
+        padding: 13px 14px;
+    }
+}
+/* Small phones to small tablets: from 481px to 767px*/
+@media only screen and (max-width: 767px){
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+
+    .row,
+    .main-describe-text { padding: 0 4%; }
+
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    .main-nav li { display: block; }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+    .sticky .mobile-menu-icon {
+        margin-top: 5px;
+        filter: brightness(1) invert(0);
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-menu-icon { margin-top: 10px; }
+
+    h1 {
+        padding-top: 5%;
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size: 250%;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    h2:after {
+        width: 150px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    hr {
+        width: 425px;
+    }
+    .btn, input[type=submit]{
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+    input[type=submit]{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio-nav li {
+        margin-left: 0;
+    }
+    .tab {
+        width: 100%;
+    }
+    .tab button{
+        width: 100%;
+        margin: 0;
+        font-size: 13px;
+        padding: 11px 10px;
+    }
+}
+
+/* Small phones: from 0 to 480px*/
+@media only screen and (max-width: 480px){
+
+    section { padding: 25px 0; }
+    .contat-form { width: 100%; }
+    input[type=submit] {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

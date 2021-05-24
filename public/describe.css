@@ -1,0 +1,134 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/shutterstock_290001398.jpg");
+    height:  60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.gamecollector {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/fjV8jiknC3bHng3M.png");
+}
+/* Nie działa prawidłowo napis przy małych rozdzielczościach*/
+.portfolio-describe-text {
+    position: absolute;
+    width: 1140px;
+    bottom: 50%;
+    right: 50%;
+    text-align: right;
+    transform: translate(50%, 30%);
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
+    0 8px 13px rgba(0, 0, 0, 0.4),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+}
+/* --------------------------------------------------------------*/
+/* Reusable */
+/* --------------------------------------------------------------*/
+.background-blue {
+    background-color: #1CADE4;
+    color: white;
+
+}
+
+.background-blue .row .description-text h2:after {
+    display: block;
+    height: 2px;
+    background-color: black;
+    content: " ";
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------------*/
+/* Technology */
+/* --------------------------------------------------------------*/
+.rounded {
+    border-radius: 25px;
+    border: 2px solid #1CADE4;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+p img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+/* --------ToolTip -------------*/
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+
+a.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:60px; margin-left:-160px;
+    width:300px; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute;
+    border-radius: 20px;
+    border:2px solid #FFF;  color:#EEE;
+    background: #1CADE4 url(http://www.menucool.com/tooltip/cssttp/css-tooltip-gradient-bg.png) repeat-x 0 0;
+}
+a.tooltip span
+{
+    border-radius:2px;
+    box-shadow: 0 0 8px 4px #666;
+    /*opacity: 0.8;*/
+}
+/* --------------------------------------------------------------*/
+/* Desription */
+/* --------------------------------------------------------------*/
+
+.description-text {
+    display: inline-block;
+    margin-left: 40px;
+    padding: 15px 0;
+    word-spacing: 2px;
+}
+.describtion-title {
+    text-align: center;
+}
+.describtion-title:after {
+    display: block;
+    height: 2px;
+    background-color: #1CADE4;
+    content: " ";
+    width: 100px;
+    margin: 0 auto 10px;
+}
+.box:after {
+    background-color: black;
+}
+
+/* --------------------------------------------------------------*/
+/* Gallery */
+/* --------------------------------------------------------------*/
+.card img {
+    height: 650px;
+    width: 750px;
+    overflow: hidden;
+    margin: 0;
+    background-color: #000;
+}
+
+.container {
+    background-color: #888;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+/* --------------------------------------------------------------*/
+/* Viedo */
+/* --------------------------------------------------------------*/
+
+

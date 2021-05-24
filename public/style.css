@@ -1,0 +1,469 @@
+/* --------------------------------------------------------------*/
+/* BASIC SETUP */
+/* --------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* --------------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/* --------------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section {
+    padding: 50px 0;
+}
+/* --------- HEADINGS ------------ */
+
+h1 {
+    margin: 0;
+    font-size: 350%;
+    font-weight: 300;
+    word-spacing: 3px;
+}
+h2 {
+    font-size: 200%;
+    padding-bottom: 8px;
+}
+.h1-fullname {
+    padding-bottom: 1%;
+}
+.h2-fullname {
+    padding-bottom: 4%;
+}
+.h3-fullname {
+    padding-bottom: 8%;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #1CADE4;
+    content: " ";
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.h2-fullname:after {
+    all:unset;
+}
+h3 {
+    font-size: 120%;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+h4 {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+hr {
+    width:800px;
+    border-top: 1px solid white;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#aboutme-text {
+    font-size: 290%;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+/* --------------------------------------------------------------*/
+/* HEADER */
+/* --------------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/shutterstock_290001398.jpg");
+    height:  100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-describe-text {
+    position: absolute;
+    width: 1140px;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -40%);
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
+    0 8px 13px rgba(0, 0, 0, 0.4),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.btn,
+input[type=submit]
+{
+    text-align: center;
+    display: inline-block;
+    font-weight: 300;
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 200px;
+    outline: none;
+    background-color: #1CADE4;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.logo-small {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+/* Sticky navi */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 35px;
+}
+
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 16px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-botom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #1CADE4;
+}
+
+.mobile-nav-icon {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon img {
+    width: 45px;
+    height: 60px;
+}
+.mobile-menu-icon {
+    filter: brightness(0) invert(1)
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+.sticky .main-nav {
+    margin-top: 18px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-small { display: block; }
+
+/* --------- BUTTONS ------------ */
+
+.btn:link,
+.btn:visited,
+input[type=submit]
+{
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
+    background-color: #168bb7;
+}
+
+/* --------------------------------------------------------------*/
+/* PORTFOLIO */
+/* --------------------------------------------------------------*/
+.main-portoflio {
+
+}
+.portfolio-nav {
+    list-style: none;
+}
+.portfolio-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding: 35px 0;
+    word-spacing: 2px;
+}
+.portfolio-graphic {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: #000;
+}
+.portfolio-graphic img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.portfolio-graphic img:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+/* --------------------------------------------------------------*/
+/* ABOUT ME */
+/* --------------------------------------------------------------*/
+.description-text {
+    display: inline-block;
+    padding: 15px 0;
+    word-spacing: 2px;
+}
+.describtion-title {
+    display: flex;
+    justify-content: center;
+}
+
+.background-blue {
+    background-color: #1CADE4;
+    color: white;
+}
+
+.asdasd:after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    width: 100px;
+    margin: 0 auto 10px;
+}
+.specialButton:after {
+    background-color: white;
+    margin: 0 auto;
+}
+/* ---------- TABBED MENU -----------*/
+/* Style the tab */
+.specialButton {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: none;
+
+}
+#defaultOpen {
+    border: none;
+}
+#defaultOpen:after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    width: 100px;
+    margin: 0 auto 30px;
+}
+.tab {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+}
+/* Może pogorszyć responsywność strony */
+.tablinks {
+    color: white;
+    background-color: #1CADE4;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    font-size: 16px;
+    width: 170px;
+    height: 50px;
+    border-radius: 200px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: black;
+    background-color: white;
+    border: 1px solid silver;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: white;
+    background-color: #168bb7;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #1CADE4;
+    border: 1px solid white;
+    color: white;
+}
+.tab button:link,
+.tab button:visited {
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* --------------------------------------------------------------*/
+/* FORM */
+/* --------------------------------------------------------------*/
+.contat-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #1CADE4;
+}
+textarea {
+    height: 100px;
+}
+input[type=submit]
+{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+input[type =checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none; }
+
+/* --------------------------------------------------------------*/
+/* FOOTER */
+/* --------------------------------------------------------------*/
+
+
+footer {
+    background-color: #333;
+    padding: 40px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-links a:link,
+.social-links a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
+.social-links {
+    opacity: 0.7;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.social-links li a img {
+    width: 30px;
+    height: 30px;
+}
+.social-links li a:hover {
+    filter: brightness(0) invert(1)
+}
+
+
+

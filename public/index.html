@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" type="text/css" href="queries.css">
+    <title>Title</title>
+</head>
+<body>
+<header id="firstscreen">
+    <nav >
+        <div class="row" >
+            <a href="#firstscreen">    <img src="img/customer-support.png" alt="Logo" class="logo">
+            <img src="img/customer-support.png" alt="Logo" class="logo-small"></a>
+
+            <ul class = "main-nav js--main-nav">
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a a href="" >Resumé</a></li>
+
+            </ul>
+            <a  class="mobile-nav-icon js--nav-icon"><img src="img/icons/menu-outline.svg" alt="MobileMenu" class="mobile-menu-icon" id="menuburger"></a>
+        </div>
+    </nav>
+    <div class="main-describe-text">
+            <h1 class="h1-fullname"> Mobile Java Developer</h1>
+            <h2 class="h2-fullname">Mateusz Gęślowski</h2>
+            <hr>
+            <h3 class="h3-fullname">Student informatyki, studiujący jeszcze więcej informatyki. Aktualnie na studiach magisterskich, rozwijający
+                się w dziedzienie programowania aplikacji mobilnych. Ze względu na
+                niesamowite połączenie frontend'u z backend'em na tych platformach.
+                Jego pasją są najnowsze technologie i rozwiązania.</h3><br>
+            <a class="btn main-btn js--scroll-to-portfolio" href="#" >Get Started!</a>
+    </div>
+</header>
+<section class="main-portoflio js--section-features js--scroll-portfolio" id="portfolio">
+    <div class="row">
+        <ul class = "portfolio-nav">
+            <li>
+                <div class="portofilio-inside-settings">
+                <h2> GameCollector </h2>
+        <h4>
+            Aplikacja służąca do przypisywania spersonalizowanej listy gier. Poprzez rejestrację można zbudować idealną
+            kolekcję, bądź zaplanować kolejne przejścia.
+            Kolekcję podzielić można na trzy części - ukończone, w trakcie (gry) i wyczekiwane (odłożone).
+        </h4>
+       <!-- <a href="#" class="img-gamecollector">Obrazek click</a>-->
+                    <figure class="portfolio-graphic">
+                       <a href="gamecollectordescribe.html"> <img src="img/fjV8jiknC3bHng3M.png" alt="Logo" class="logo"></a>
+                    </figure>
+                </div>
+            </li>
+            <li> <div class="portofilio-inside-settings">
+                <h2> WatchApp </h2>
+        <h4>
+            Dla fanów podcastu, gdzie każdy użytkownik posiada tę samą listę, którą użytkownicy mogą modyfikować wspólnie, z systemem
+            ujednolicania natychmiastowych zmian. Lista ta składa się z elementów, które zostały wspomniane w podcaście,
+            dzielą się one na filmy, seriale, gry i książki. Użytkownicy mogą dowolnie odznaczać elementy, które już zobaczyli, jak i
+            dostosowywać swoją listę pod względem odpowiednich kategorii, poprzez zaawansowany system filtracji.
+        </h4>
+                <!-- <a href="#" class="img-gamecollector">Obrazek click</a>-->
+                <figure class="portfolio-graphic">
+                    <img src="img/fjV8jiknC3bHng3M.png" alt="Logo" class="logo">
+                </figure>
+            </div> </li> <li> <div class="portofilio-inside-settings">
+        <h2> GwentDeckTracer </h2>
+        <h4>
+            Mobilna aplikacja służąca jako niezależny dodatek do pełnoprawnej gry karcianek z Wiedźmin 3 o nazwie Gwint.
+            Zasada działania polega na dodawaniu przez siebie stworzonych talii i przypisywaniu im wartości wygranych i przegranych.
+        </h4>
+            <!-- <a href="#" class="img-gamecollector">Obrazek click</a>-->
+            <figure class="portfolio-graphic">
+                <img src="img/fjV8jiknC3bHng3M.png" alt="Logo" class="logo">
+            </figure>
+        </div></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Zastanowić się nad  -->
+<section class="aboutme background-blue" id="about">
+    <div class="row">
+        <div class="description-text">
+
+            <div class="row">
+           <div class="specialButton"> <button class="tablinks" onclick="openCity(event, 'aboutme')" id="defaultOpen"><h2 id="aboutme-text">O Mnie</h2></button>
+           </div></div>
+            <!-- Tab links -->
+            <div class="row js--wp-1">
+            <div class="tab">
+                <div class="col span-1-of-4">
+                    <button class="tablinks" onclick="openCity(event, 'skills')">Umiejętności</button>
+                </div>
+                <div class="col span-1-of-4">
+                    <button class="tablinks" onclick="openCity(event, 'technology')">Technology</button>
+                </div>
+                <div class="col span-1-of-4">
+                    <button class="tablinks" onclick="openCity(event, 'intrest')">Zainteresowania</button>
+                </div>
+                <div class="col span-1-of-4">
+                    <button class="tablinks" onclick="openCity(event, 'education')">Edukacja</button>
+                </div>
+            </div>
+            </div>
+            <!-- Tab content -->
+            <div class="row>">
+            <div id="aboutme" class="tabcontent">
+                <h4>
+                   AboutME!!  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </h4>            </div>
+
+            <div id="skills" class="tabcontent">
+                <h4>
+                    Skills!!  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </h4>            </div>
+
+            <div id="technology" class="tabcontent">
+                <h4>
+                    Technology!!  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </h4>            </div>
+            <div id="intrest" class="tabcontent">
+                <h4>
+                    Zainteresowania!!   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </h4>            </div>
+            <div id="education" class="tabcontent">
+                <h4>
+                    Edukacja!!  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </h4>            </div></div>
+
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+                document.getElementById("defaultOpen").click();
+
+            </script>
+        </div>
+    </div>
+</section>
+<section class="section-form" id="contact">
+    <div class="row" >
+        <h2 style="margin-left: 28px"> Contact now! </h2>
+    </div>
+    <div class="row">
+        <form method="post" action="#" class="contat-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="like">Do you like the CV?</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="checkbox" name="like" id="like" checked> Of course, I love it!
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Message</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Send it!">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="row">
+        <div class="col span-1-of-2">
+            <ul class="footer-nav">
+                <li><a href="#">Work</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Contact</a> </li>
+                <li><a href="#">Resumé</a> </li>
+            </ul>
+        </div>
+        <div class="col span-1-of-2">
+            <ul class="social-links">
+                <li><a href="#" class="fb2"> <img src="img/icons/logo-facebook.svg" alt="facebook" class="fb"></a></li>
+                <li><a href="#"><img src="img/icons/logo-twitter.svg" alt="twitter"> </a></li>
+                <li><a href="#"><img src="img/icons/logo-linkedin.svg" alt="linkdin"> </a></li>
+                <li><a href="#"><img src="img/icons/logo-github.svg" alt="github"> </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p>
+        Copyright &copy; 2021 by Mateusz Gęślowski. All rights reserved.
+        </p>
+    </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="script.js"></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDzLQ0H5a9-UTbIB6tdYLSp9vNfjnWJGyw",
+        authDomain: "mgportfoliocv.firebaseapp.com",
+        projectId: "mgportfoliocv",
+        storageBucket: "mgportfoliocv.appspot.com",
+        messagingSenderId: "293187984190",
+        appId: "1:293187984190:web:aee11c139a559494102a6f",
+        measurementId: "G-29VLJV11S6"
+    };
+
+
+    //var gsReference = storage.refFromURL('gs://mgportfoliocv.appspot.com/Seminarium - Mateusz Gęślowski.pdf')
+
+
+</script>
+<script >
+    function downloadPdf() {
+            var storage = firebase.storage();
+
+        var gsReference = storage.refFromURL('gs://mgportfoliocv.appspot.com/Seminarium - Mateusz Gęślowski.pdf')
+
+
+        var starsref = storage.child('Seminarium - Mateusz Gęślowski.pdf');
+
+            starsref.getDownloadUrl().then(function (url) {
+                var xhr = new XMLHttpRequest();
+                xhr.responseType = 'blob';
+                xhr.onload = function (event) {
+                    const blob = xhr.response;
+                };
+                xhr.open('GET', url);
+                xhr.send();
+
+            });
+
+    }
+</script>
+<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="/__/firebase/8.2.2/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="/__/firebase/8.2.2/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="/__/firebase/8.2.2/firebase-auth.js"></script>
+<script src="/__/firebase/8.2.2/firebase-firestore.js"></script>
+</body>
+
+
+
+</html>
