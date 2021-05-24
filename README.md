@@ -2,7 +2,7 @@
 A web application where I introduce myself as a strong programmer. Application made in HTML5/CSS3 and Javascript with a bit of Node.js.
 Hosting - because it's on hosting - Firebase to check at any time (link below). The application is responsive for any mobile device. My porfolio CV application was built as a Single Web Application.
 
-Link(Not finished): httpsmgportfoliocv.web.app
+Link(Not finished): https://mgportfoliocv.web.app/
 
 Technology:
 
